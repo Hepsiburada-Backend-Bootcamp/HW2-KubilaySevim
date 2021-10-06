@@ -1,0 +1,12 @@
+C:\Users\dell\RiderProjects\HepsiBuradaBootcamp\HepsiBurada_Week2\MovieDb\MovieDb.Domain\bin\Debug\net5.0\MovieDb.Domain.deps.json
+C:\Users\dell\RiderProjects\HepsiBuradaBootcamp\HepsiBurada_Week2\MovieDb\MovieDb.Domain\bin\Debug\net5.0\MovieDb.Domain.dll
+C:\Users\dell\RiderProjects\HepsiBuradaBootcamp\HepsiBurada_Week2\MovieDb\MovieDb.Domain\bin\Debug\net5.0\ref\MovieDb.Domain.dll
+C:\Users\dell\RiderProjects\HepsiBuradaBootcamp\HepsiBurada_Week2\MovieDb\MovieDb.Domain\bin\Debug\net5.0\MovieDb.Domain.pdb
+C:\Users\dell\RiderProjects\HepsiBuradaBootcamp\HepsiBurada_Week2\MovieDb\MovieDb.Domain\obj\Debug\net5.0\MovieDb.Domain.csproj.AssemblyReference.cache
+C:\Users\dell\RiderProjects\HepsiBuradaBootcamp\HepsiBurada_Week2\MovieDb\MovieDb.Domain\obj\Debug\net5.0\MovieDb.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dell\RiderProjects\HepsiBuradaBootcamp\HepsiBurada_Week2\MovieDb\MovieDb.Domain\obj\Debug\net5.0\MovieDb.Domain.AssemblyInfoInputs.cache
+C:\Users\dell\RiderProjects\HepsiBuradaBootcamp\HepsiBurada_Week2\MovieDb\MovieDb.Domain\obj\Debug\net5.0\MovieDb.Domain.AssemblyInfo.cs
+C:\Users\dell\RiderProjects\HepsiBuradaBootcamp\HepsiBurada_Week2\MovieDb\MovieDb.Domain\obj\Debug\net5.0\MovieDb.Domain.csproj.CoreCompileInputs.cache
+C:\Users\dell\RiderProjects\HepsiBuradaBootcamp\HepsiBurada_Week2\MovieDb\MovieDb.Domain\obj\Debug\net5.0\MovieDb.Domain.dll
+C:\Users\dell\RiderProjects\HepsiBuradaBootcamp\HepsiBurada_Week2\MovieDb\MovieDb.Domain\obj\Debug\net5.0\ref\MovieDb.Domain.dll
+C:\Users\dell\RiderProjects\HepsiBuradaBootcamp\HepsiBurada_Week2\MovieDb\MovieDb.Domain\obj\Debug\net5.0\MovieDb.Domain.pdb

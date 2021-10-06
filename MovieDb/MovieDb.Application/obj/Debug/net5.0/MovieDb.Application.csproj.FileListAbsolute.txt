@@ -1,0 +1,15 @@
+C:\Users\dell\RiderProjects\HepsiBuradaBootcamp\HepsiBurada_Week2\MovieDb\MovieDb.Application\bin\Debug\net5.0\MovieDb.Application.deps.json
+C:\Users\dell\RiderProjects\HepsiBuradaBootcamp\HepsiBurada_Week2\MovieDb\MovieDb.Application\bin\Debug\net5.0\MovieDb.Application.dll
+C:\Users\dell\RiderProjects\HepsiBuradaBootcamp\HepsiBurada_Week2\MovieDb\MovieDb.Application\bin\Debug\net5.0\ref\MovieDb.Application.dll
+C:\Users\dell\RiderProjects\HepsiBuradaBootcamp\HepsiBurada_Week2\MovieDb\MovieDb.Application\bin\Debug\net5.0\MovieDb.Application.pdb
+C:\Users\dell\RiderProjects\HepsiBuradaBootcamp\HepsiBurada_Week2\MovieDb\MovieDb.Application\bin\Debug\net5.0\MovieDb.Domain.dll
+C:\Users\dell\RiderProjects\HepsiBuradaBootcamp\HepsiBurada_Week2\MovieDb\MovieDb.Application\bin\Debug\net5.0\MovieDb.Domain.pdb
+C:\Users\dell\RiderProjects\HepsiBuradaBootcamp\HepsiBurada_Week2\MovieDb\MovieDb.Application\obj\Debug\net5.0\MovieDb.Application.csproj.AssemblyReference.cache
+C:\Users\dell\RiderProjects\HepsiBuradaBootcamp\HepsiBurada_Week2\MovieDb\MovieDb.Application\obj\Debug\net5.0\MovieDb.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dell\RiderProjects\HepsiBuradaBootcamp\HepsiBurada_Week2\MovieDb\MovieDb.Application\obj\Debug\net5.0\MovieDb.Application.AssemblyInfoInputs.cache
+C:\Users\dell\RiderProjects\HepsiBuradaBootcamp\HepsiBurada_Week2\MovieDb\MovieDb.Application\obj\Debug\net5.0\MovieDb.Application.AssemblyInfo.cs
+C:\Users\dell\RiderProjects\HepsiBuradaBootcamp\HepsiBurada_Week2\MovieDb\MovieDb.Application\obj\Debug\net5.0\MovieDb.Application.csproj.CoreCompileInputs.cache
+C:\Users\dell\RiderProjects\HepsiBuradaBootcamp\HepsiBurada_Week2\MovieDb\MovieDb.Application\obj\Debug\net5.0\MovieDb.Application.csproj.CopyComplete
+C:\Users\dell\RiderProjects\HepsiBuradaBootcamp\HepsiBurada_Week2\MovieDb\MovieDb.Application\obj\Debug\net5.0\MovieDb.Application.dll
+C:\Users\dell\RiderProjects\HepsiBuradaBootcamp\HepsiBurada_Week2\MovieDb\MovieDb.Application\obj\Debug\net5.0\ref\MovieDb.Application.dll
+C:\Users\dell\RiderProjects\HepsiBuradaBootcamp\HepsiBurada_Week2\MovieDb\MovieDb.Application\obj\Debug\net5.0\MovieDb.Application.pdb

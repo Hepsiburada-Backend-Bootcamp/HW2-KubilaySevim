@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>MovieDb.Application</id>
+    <version>1.0.0</version>
+    <authors>MovieDb.Application</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net5.0">
+        <dependency id="MovieDb.Domain" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="AutoMapper" version="10.1.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\dell\RiderProjects\HepsiBuradaBootcamp\HepsiBurada_Week2\MovieDb\MovieDb.Application\bin\Debug\net5.0\MovieDb.Application.dll" target="lib\net5.0\MovieDb.Application.dll" />
+  </files>
+</package>
