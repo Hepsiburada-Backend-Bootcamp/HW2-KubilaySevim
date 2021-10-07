@@ -18,6 +18,6 @@ namespace MovieDbInf.Application.IServices
 
         Task<List<DirectorDto>> GetAll();
 
-        Task<List<DirectorDto>> Get(Expression<Func<DirectorDto, bool>> filter);
+        //Task<List<DirectorDto>> GetAll(Expression<Func<DirectorDto, bool>> filter);
     }
 }

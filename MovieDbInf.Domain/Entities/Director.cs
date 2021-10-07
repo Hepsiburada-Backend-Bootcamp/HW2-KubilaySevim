@@ -9,7 +9,7 @@ namespace MovieDbInf.Domain.Entities
 {
     public class Director
     {
-  public Guid Id { get; set; }
+        public Guid Id { get; set; }
         public string First_name { get; set; }
         public string Last_name { get; set; }
         public virtual ICollection<Movie> Movies { get; set; }

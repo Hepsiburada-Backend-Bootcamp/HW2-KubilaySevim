@@ -7,6 +7,8 @@ using System.Text;
 using System.Threading.Tasks;
 using MovieDbInf.Infrastructure;
 using Microsoft.Extensions.Configuration;
+using MovieDbInf.Application.IServices;
+using MovieDbInf.Application.Services;
 using MovieDbInf.Application.Movie;
 
 namespace MovieDbInf.Application
@@ -19,9 +21,10 @@ namespace MovieDbInf.Application
 
             services.AddInfrastructureModule(configuration);
 
+
+            services.AddScoped<IDirectorService, DirectorService>();
+            services.AddScoped<IGenreService, GenreService>();
             services.AddScoped<IMovieService, MovieService>();
-          //  services.AddScoped<IMovieService, MovieService>();
-           // services.AddScoped<IMovieService, MovieService>();
 
             return services;
         }

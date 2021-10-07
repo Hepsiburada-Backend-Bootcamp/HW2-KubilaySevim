@@ -25,6 +25,7 @@ namespace MovieDbInf.Infrastructure.Repository
         public async Task Add(TEntity entity)
         {
             await _dbSet.AddAsync(entity);
+            await _movieDbContext.SaveChangesAsync();
         }
 
         public async Task Delete(TEntity entity)

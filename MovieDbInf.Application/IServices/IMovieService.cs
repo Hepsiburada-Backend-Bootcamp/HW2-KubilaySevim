@@ -1,4 +1,5 @@
-﻿using MovieDbInf.Application.Movie.Dto;
+﻿using MovieDbInf.Application.Movie;
+using MovieDbInf.Application.Movie.Dto;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +7,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MovieDbInf.Application.Movie
+namespace MovieDbInf.Application.IServices
 {
     public interface IMovieService
     {

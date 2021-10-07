@@ -1,0 +1,155 @@
+2021-10-07 16:17:37.237 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-10-07 16:17:37.246 +03:00 [INF] Hosting environment: Development
+2021-10-07 16:17:37.247 +03:00 [INF] Content root path: C:\Users\dell\RiderProjects\HepsiBuradaBootcamp\HepsiBurada_Week2\MovieDbInf\MovieDbInf.Api
+2021-10-07 16:17:37.263 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:16827/swagger/index.html - -
+2021-10-07 16:17:37.467 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:16827/swagger/index.html - - - 200 - text/html;charset=utf-8 206.9344ms
+2021-10-07 16:17:37.858 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:16827/swagger/v1/swagger.json - -
+2021-10-07 16:17:37.962 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:16827/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 104.0520ms
+2021-10-07 16:17:53.792 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:16827/api/Director - -
+2021-10-07 16:17:53.801 +03:00 [WRN] Failed to determine the https port for redirect.
+2021-10-07 16:17:53.832 +03:00 [INF] Executing endpoint 'MovieDbInf.API.Controllers.DirectorController.Get (MovieDbInf.API)'
+2021-10-07 16:17:53.867 +03:00 [INF] Route matched with {action = "Get", controller = "Director"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller MovieDbInf.API.Controllers.DirectorController (MovieDbInf.API).
+2021-10-07 16:17:54.893 +03:00 [INF] Entity Framework Core 5.0.10 initialized 'MovieDbInfContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+2021-10-07 16:17:55.065 +03:00 [INF] In Director Get Method
+2021-10-07 16:17:55.991 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT d."Id", d."CountryId", d."First_name", d."Last_name"
+FROM "Directors" AS d
+2021-10-07 16:17:56.100 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`3[[System.Boolean, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[MovieDbInf.Application.Dto.Director.DirectorDto, MovieDbInf.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2021-10-07 16:17:56.119 +03:00 [INF] Executed action MovieDbInf.API.Controllers.DirectorController.Get (MovieDbInf.API) in 2246.1629ms
+2021-10-07 16:17:56.119 +03:00 [INF] Executed endpoint 'MovieDbInf.API.Controllers.DirectorController.Get (MovieDbInf.API)'
+2021-10-07 16:17:56.126 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:16827/api/Director - - - 200 - application/json;+charset=utf-8 2333.9045ms
+2021-10-07 16:17:59.003 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:16827/api/Director - -
+2021-10-07 16:17:59.005 +03:00 [INF] Executing endpoint 'MovieDbInf.API.Controllers.DirectorController.Get (MovieDbInf.API)'
+2021-10-07 16:17:59.006 +03:00 [INF] Route matched with {action = "Get", controller = "Director"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller MovieDbInf.API.Controllers.DirectorController (MovieDbInf.API).
+2021-10-07 16:17:59.034 +03:00 [INF] Entity Framework Core 5.0.10 initialized 'MovieDbInfContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+2021-10-07 16:17:59.034 +03:00 [INF] In Director Get Method
+2021-10-07 16:17:59.046 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT d."Id", d."CountryId", d."First_name", d."Last_name"
+FROM "Directors" AS d
+2021-10-07 16:17:59.049 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`3[[System.Boolean, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[MovieDbInf.Application.Dto.Director.DirectorDto, MovieDbInf.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2021-10-07 16:17:59.049 +03:00 [INF] Executed action MovieDbInf.API.Controllers.DirectorController.Get (MovieDbInf.API) in 43.501ms
+2021-10-07 16:17:59.050 +03:00 [INF] Executed endpoint 'MovieDbInf.API.Controllers.DirectorController.Get (MovieDbInf.API)'
+2021-10-07 16:17:59.050 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:16827/api/Director - - - 200 - application/json;+charset=utf-8 46.7409ms
+2021-10-07 16:18:03.071 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:16827/api/Director application/json 139
+2021-10-07 16:18:03.072 +03:00 [INF] Executing endpoint 'MovieDbInf.API.Controllers.DirectorController.Add (MovieDbInf.API)'
+2021-10-07 16:18:03.086 +03:00 [INF] Route matched with {action = "Add", controller = "Director"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(MovieDbInf.Application.Dto.Director.DirectorDto) on controller MovieDbInf.API.Controllers.DirectorController (MovieDbInf.API).
+2021-10-07 16:18:03.094 +03:00 [INF] Entity Framework Core 5.0.10 initialized 'MovieDbInfContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+2021-10-07 16:18:03.118 +03:00 [INF] In Director Add Method
+2021-10-07 16:18:03.261 +03:00 [ERR] Failed executing DbCommand (26ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?', @p3='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Directors" ("Id", "CountryId", "First_name", "Last_name")
+VALUES (@p0, @p1, @p2, @p3);
+2021-10-07 16:18:03.328 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'MovieDbInf.Infrastructure.Context.MovieDbInfContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23503: "Directors" tablosu üzerindeki ekleme veya güncelleme işlemi "FK_Directors_Countries_CountryId" foreign key kısıtlamasını ihlal ediyor
+   at Npgsql.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|194_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: HATA
+    SqlState: 23503
+    MessageText: "Directors" tablosu üzerindeki ekleme veya güncelleme işlemi "FK_Directors_Countries_CountryId" foreign key kısıtlamasını ihlal ediyor
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Directors
+    ConstraintName: FK_Directors_Countries_CountryId
+    File: d:\pginstaller_13.auto\postgres.windows-x64\src\backend\utils\adt\ri_triggers.c
+    Line: 2476
+    Routine: ri_ReportViolation
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23503: "Directors" tablosu üzerindeki ekleme veya güncelleme işlemi "FK_Directors_Countries_CountryId" foreign key kısıtlamasını ihlal ediyor
+   at Npgsql.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|194_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: HATA
+    SqlState: 23503
+    MessageText: "Directors" tablosu üzerindeki ekleme veya güncelleme işlemi "FK_Directors_Countries_CountryId" foreign key kısıtlamasını ihlal ediyor
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Directors
+    ConstraintName: FK_Directors_Countries_CountryId
+    File: d:\pginstaller_13.auto\postgres.windows-x64\src\backend\utils\adt\ri_triggers.c
+    Line: 2476
+    Routine: ri_ReportViolation
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at MovieDbInf.Infrastructure.Repository.Repository`1.Add(TEntity entity) in C:\Users\dell\RiderProjects\HepsiBuradaBootcamp\HepsiBurada_Week2\MovieDbInf\MovieDbInf.Infrastructure\Repository\Repository.cs:line 28
+   at MovieDbInf.API.Controllers.DirectorController.Add(DirectorDto directorDto) in C:\Users\dell\RiderProjects\HepsiBuradaBootcamp\HepsiBurada_Week2\MovieDbInf\MovieDbInf.Api\Controllers\DirectorController.cs:line 35
+2021-10-07 16:18:03.475 +03:00 [ERR] In Director Add Method throws excepion
+2021-10-07 16:18:03.537 +03:00 [INF] Executed action MovieDbInf.API.Controllers.DirectorController.Add (MovieDbInf.API) in 450.9817ms
+2021-10-07 16:18:03.538 +03:00 [INF] Executed endpoint 'MovieDbInf.API.Controllers.DirectorController.Add (MovieDbInf.API)'
+2021-10-07 16:18:03.540 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23503: "Directors" tablosu üzerindeki ekleme veya güncelleme işlemi "FK_Directors_Countries_CountryId" foreign key kısıtlamasını ihlal ediyor
+   at Npgsql.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|194_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: HATA
+    SqlState: 23503
+    MessageText: "Directors" tablosu üzerindeki ekleme veya güncelleme işlemi "FK_Directors_Countries_CountryId" foreign key kısıtlamasını ihlal ediyor
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Directors
+    ConstraintName: FK_Directors_Countries_CountryId
+    File: d:\pginstaller_13.auto\postgres.windows-x64\src\backend\utils\adt\ri_triggers.c
+    Line: 2476
+    Routine: ri_ReportViolation
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at MovieDbInf.Infrastructure.Repository.Repository`1.Add(TEntity entity) in C:\Users\dell\RiderProjects\HepsiBuradaBootcamp\HepsiBurada_Week2\MovieDbInf\MovieDbInf.Infrastructure\Repository\Repository.cs:line 28
+   at MovieDbInf.API.Controllers.DirectorController.Add(DirectorDto directorDto) in C:\Users\dell\RiderProjects\HepsiBuradaBootcamp\HepsiBurada_Week2\MovieDbInf\MovieDbInf.Api\Controllers\DirectorController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-10-07 16:18:03.580 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:16827/api/Director application/json 139 - 500 - text/plain 508.6825ms

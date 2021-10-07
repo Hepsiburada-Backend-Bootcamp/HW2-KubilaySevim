@@ -1,9 +1,9 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace MovieDbInf.Infrastructure.Migrations.MovieDbInf
+namespace MovieDbInf.Infrastructure.Migrations
 {
-    public partial class Init : Migration
+    public partial class MovieDbInf : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

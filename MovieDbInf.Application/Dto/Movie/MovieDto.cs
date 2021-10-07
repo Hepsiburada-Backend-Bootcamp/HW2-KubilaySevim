@@ -13,5 +13,8 @@ namespace MovieDbInf.Application.Movie
         public string Title { get; set; }
         public int ReleaseDate { get; set; }
 
+        public Guid DirectorId { get; set; }
+        public Guid GenreId { get; set; }
+        public Guid CountryId { get; set; }
     }
 }

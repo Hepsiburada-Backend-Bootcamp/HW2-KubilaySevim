@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using MovieDbInf.Application.Dto.Director;
 using MovieDbInf.Application.Dto.Genre;
 using MovieDbInf.Application.Movie.Dto;
 using System;
@@ -18,6 +19,8 @@ namespace MovieDbInf.Application.Movie
 
             CreateMap<GenreDto, Domain.Entities.Genre>().ReverseMap();
             CreateMap<Domain.Entities.Genre, UpdateGenreDto>();
+
+            CreateMap<DirectorDto, Domain.Entities.Director>().ReverseMap();
 
         }
     }

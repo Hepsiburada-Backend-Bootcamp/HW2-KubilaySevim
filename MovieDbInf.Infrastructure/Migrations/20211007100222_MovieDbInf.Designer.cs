@@ -7,11 +7,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MovieDbInf.Infrastructure.Context;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
-namespace MovieDbInf.Infrastructure.Migrations.MovieDbInf
+namespace MovieDbInf.Infrastructure.Migrations
 {
     [DbContext(typeof(MovieDbInfContext))]
-    [Migration("20211006100845_Init")]
-    partial class Init
+    [Migration("20211007100222_MovieDbInf")]
+    partial class MovieDbInf
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

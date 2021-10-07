@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MovieDbInf.Infrastructure.Context;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
-namespace MovieDbInf.Infrastructure.Migrations.MovieDbInf
+namespace MovieDbInf.Infrastructure.Migrations
 {
     [DbContext(typeof(MovieDbInfContext))]
     partial class MovieDbInfContextModelSnapshot : ModelSnapshot

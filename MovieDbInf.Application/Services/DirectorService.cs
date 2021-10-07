@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace MovieDbInf.Application.Services
 {
-    class DirectorService : IDirectorService
+    public class DirectorService : IDirectorService
     {
         private readonly IDirectorRepository _directorRepository;
         private readonly IMapper _mapper;
@@ -33,18 +33,12 @@ namespace MovieDbInf.Application.Services
             throw new NotImplementedException();
         }
 
-        public async  Task<List<DirectorDto>> Get(Expression<Func<DirectorDto, bool>> filter)
-        {
-            var dtoFilter =  _mapper.Map<Expression<Func<Domain.Entities.Director, bool>>>(filter);
-            var result = await _directorRepository.Get(dtoFilter);
-            return  _mapper.Map<List<DirectorDto>>(result);
-            //return await Task.FromResult(_mapper.Map<List<DirectorDto>>(result));
 
-        }
-
-        public Task<List<DirectorDto>> GetAll()
+        public async Task<List<DirectorDto>> GetAll()
         {
-            throw new NotImplementedException();
+            //var dtoFilter =  _mapper.Map<Expression<Func<Domain.Entities.Director, bool>>>(filter);
+            var result = await _directorRepository.GetAll();
+            return  _mapper.Map<List<DirectorDto>>(result);;
         }
 
         public Task Update(int id, UpdateDirectorDto director)

@@ -17,13 +17,13 @@ namespace MovieDbInf.Infrastructure
     {
         public static IServiceCollection AddInfrastructureModule(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddDbContext<MovieDbInfContext>(
-                options => options.UseNpgsql(configuration.GetConnectionString("Default"),
-                    b=>b.MigrationsAssembly(Assembly.GetExecutingAssembly().FullName))
-                );
+            //services.AddDbContext<MovieDbInfContext>(
+            //    options => options.UseNpgsql(configuration.GetConnectionString("Default"),
+            //        b=>b.MigrationsAssembly(Assembly.GetExecutingAssembly().FullName))
+            //    );
 
             services.AddScoped<IMovieRepository, MovieRepository>();
-            services.AddScoped<IMovieRepository, MovieRepository>();
+            services.AddScoped<IGenreRepository, GenreRepository>();
             services.AddScoped<IDirectorRepository, DirectorRepository>();
 
             return services;
