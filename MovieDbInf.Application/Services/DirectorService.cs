@@ -28,10 +28,6 @@ namespace MovieDbInf.Application.Services
             return _directorRepository.Add(_mapper.Map<Domain.Entities.Director>(director));
         }
 
-        public Task Delete(int id)
-        {
-            throw new NotImplementedException();
-        }
 
 
         public async Task<List<DirectorDto>> GetAll()
@@ -41,9 +37,25 @@ namespace MovieDbInf.Application.Services
             return  _mapper.Map<List<DirectorDto>>(result);;
         }
 
-        public Task Update(int id, UpdateDirectorDto director)
+        public Task Update(Guid id, UpdateDirectorDto director)
         {
             throw new NotImplementedException();
         }
+        
+        public async Task<DirectorDto> Get(Guid id)
+        {
+            var dre = await _directorRepository.Get(id);
+
+            return  _mapper.Map<DirectorDto>(dre);
+        }
+
+        public   Task Delete(Guid id)
+        {
+            var director =    _directorRepository.Get(id);
+
+            return _directorRepository.Delete(_mapper.Map<Domain.Entities.Director>(director.Result));
+
+        }
+
     }
 }

@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MovieDbInf.Application.Dto.Movie;
 
 namespace MovieDbInf.API.Controllers
 {
@@ -43,6 +44,38 @@ namespace MovieDbInf.API.Controllers
         {
             var result =  await _movieService.GetAll();
             return Ok(new { status = true, data = result, errors = "" });
+        }
+        
+        [HttpGet("{id}")]
+        public IActionResult Get(Guid id)
+        {
+            var result = _movieService.Get( id);
+
+            if (result.Result != null)
+            {
+                return Ok(new {status = true, data = result.Result, errors = ""});
+            }
+
+            return NotFound();      
+        }
+        
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(Guid id)
+        {
+            _logger.LogInformation("Delete method movie controller");
+            
+            try
+            {
+                await _movieService.Delete(id);
+                _logger.LogInformation("Delete method movie controller accomplished");
+
+                return Ok(new {status = true, errors = ""});
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+
+            }
         }
     }
 }

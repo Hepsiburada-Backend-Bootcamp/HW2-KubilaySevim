@@ -12,12 +12,12 @@ namespace MovieDbInf.Application.IServices
     {
         Task Add(DirectorDto director);
 
-        Task Delete(int id);
+        Task Delete(Guid id);
 
-        Task Update(int id, UpdateDirectorDto director);
+        Task Update(Guid id, UpdateDirectorDto director);
 
         Task<List<DirectorDto>> GetAll();
 
-        //Task<List<DirectorDto>> GetAll(Expression<Func<DirectorDto, bool>> filter);
+        Task<DirectorDto> Get(Guid id);
     }
 }

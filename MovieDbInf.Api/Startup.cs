@@ -16,6 +16,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+using Microsoft.AspNetCore.Mvc.NewtonsoftJson;
 namespace MovieDbInf
 {
     public class Startup
@@ -43,7 +44,9 @@ namespace MovieDbInf
 
             services.AddApplicationModule(Configuration);
 
-
+            services.AddControllers().AddNewtonsoftJson(options =>
+                options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+            );
             services.AddLogging();
 
             services.AddControllers();

@@ -47,10 +47,39 @@ namespace MovieDbInf.API.Controllers
             {
                 _logger.LogWarning("In Genre getAll Method result returns null");
                 return BadRequest();
+            }
+        }
+        
+        [HttpGet("{id}")]
+        public IActionResult Get(Guid id)
+        {
+            var result = _genreService.Get( id);
+
+            if (result.Result != null)
+            {
+                return Ok(new {status = true, data = result.Result, errors = ""});
+            }
+
+            return NotFound();       
+        }
+        
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(Guid id)
+        {
+            _logger.LogInformation("Delete method genre controller");
+            
+            try
+            {
+                await _genreService.Delete(id);
+                _logger.LogInformation("Delete method genre controller accomplished");
+
+                return Ok(new {status = true, errors = ""});
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
 
             }
         }
-
-
     }
 }

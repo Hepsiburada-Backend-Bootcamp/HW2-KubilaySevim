@@ -13,8 +13,10 @@ namespace MovieDbInf.Domain.Repositories
         Task Delete(TEntity entity);
         Task Update(TEntity entity);
 
-        Task<List<TEntity>> Get(Expression<Func<TEntity, bool>> filter);
+        Task<TEntity> Get(Guid id);
 
         Task<List<TEntity>> GetAll();
+        
+        
     }
 }

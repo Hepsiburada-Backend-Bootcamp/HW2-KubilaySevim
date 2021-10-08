@@ -12,13 +12,13 @@ namespace MovieDbInf.Application.IServices
     {
         Task Add(GenreDto genre);
 
-        Task Delete(int id);
+        Task Delete(Guid id);
 
-        Task Update(int id, UpdateGenreDto genre);
+        Task Update(Guid id, UpdateGenreDto genre);
 
         Task<List<GenreDto>> GetAll();
 
-        Task<List<GenreDto>> Get(Expression<Func<GenreDto, bool>> filter);
+        Task<GenreDto> Get(Guid id);
 
     }
 }

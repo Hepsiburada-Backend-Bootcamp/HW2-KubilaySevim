@@ -24,5 +24,6 @@ namespace MovieDbInf.Infrastructure.Repository
            return await _dbSet.Where(x => x.DirectorId == id).ToListAsync();
 
         }
+        
     }
 }

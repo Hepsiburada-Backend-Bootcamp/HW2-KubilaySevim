@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
+using MovieDbInf.Application.Dto.Movie;
 
 namespace MovieDbInf.Application.Services
 {
@@ -26,19 +27,22 @@ namespace MovieDbInf.Application.Services
             return _movieRepository.Add(_mapper.Map<MovieDbInf.Domain.Entities.Movie>(movieDto));
         }
 
-        public Task Delete(int id)
+        public Task Delete(Guid id)
         {
             throw new NotImplementedException();
         }
 
-        public async Task<List<MovieDto>> Get(Expression<Func<MovieDto, bool>> filter)
+        public Task Update(Guid id, UpdateMovieDto movie)
         {
-            var dtoFilter = _mapper.Map<Expression<Func<Domain.Entities.Movie, bool>>>(filter);
-            var result = await _movieRepository.Get(dtoFilter);
+            throw new NotImplementedException();
+        }
 
-            return _mapper.Map<List<MovieDto>>(result);
+        public async Task<MovieDto> Get(Guid id)
+        {
+            
+            var result = await _movieRepository.Get(id);
 
-
+            return _mapper.Map<MovieDto>(result);
         }
 
         public async Task<List<MovieDto>> GetAll()

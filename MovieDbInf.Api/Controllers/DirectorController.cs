@@ -27,13 +27,12 @@ namespace MovieDbInf.API.Controllers
         [HttpPost]
         public async Task<IActionResult> Add([FromBody] DirectorDto directorDto)
         {
-
             try
             {
                 _logger.LogInformation("In DirectorController Add Method");
                 _logger.LogTrace("Log Trace - In Director Add Method");
                 await _directorService.Add(directorDto);
-                return Ok(new { status = true, errors = "" });
+                return Ok(new {status = true, errors = ""});
             }
             catch (Exception)
             {
@@ -41,24 +40,50 @@ namespace MovieDbInf.API.Controllers
 
                 throw;
             }
-    
         }
 
         [HttpGet]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> GetAll()
         {
             _logger.LogInformation("In Director Get Method");
 
             List<DirectorDto> result = await _directorService.GetAll();
-            return Ok(new { status = true, data = result, errors = "" });
+            return Ok(new {status = true, data = result, errors = ""});
             //var result = await _directorService.GetAll(_ => true);
             //return Ok(new { status = true, data = result, errors = "" });
         }
 
+        [HttpGet("{id}")]
+        public IActionResult Get(Guid id)
+        {
+            var result = _directorService.Get(id);
 
-         
+            if (result.Result != null)
+            {
+                return Ok(new {status = true, data = result.Result, errors = ""});
+            }
+
+            return NotFound();
+        }
 
 
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(Guid id)
+        {
+            _logger.LogInformation("Delete method directorcontroller");
+            
+            try
+            {
+                await _directorService.Delete(id);
+                _logger.LogInformation("Delete method director controller accomplished");
 
+                return Ok(new {status = true, errors = ""});
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+
+            }
+        }
     }
 }

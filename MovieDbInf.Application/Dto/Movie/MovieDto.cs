@@ -1,11 +1,6 @@
-﻿using MovieDbInf.Domain.Repositories;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 
-namespace MovieDbInf.Application.Movie
+namespace MovieDbInf.Application.Dto.Movie
 {
     public class MovieDto
     {

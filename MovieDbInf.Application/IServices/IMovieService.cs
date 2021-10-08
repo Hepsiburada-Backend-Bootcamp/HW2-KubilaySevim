@@ -6,6 +6,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using MovieDbInf.Application.Dto.Movie;
 
 namespace MovieDbInf.Application.IServices
 {
@@ -13,12 +14,12 @@ namespace MovieDbInf.Application.IServices
     {
         Task Add(MovieDto movie);
 
-        Task Delete(int id);
+        Task Delete(Guid id);
 
-        Task Update(int id, UpdateMovieDto movie);
+        Task Update(Guid id, UpdateMovieDto movie);
 
         Task<List<MovieDto>> GetAll();
 
-        Task<List<MovieDto>> Get(Expression<Func<MovieDto, bool>> filter);
+        Task<MovieDto> Get(Guid id);
     }
 }

@@ -28,17 +28,19 @@ namespace MovieDbInf.Application.Services
         }
 
 
-        public Task Delete(int id)
+        public Task Delete(Guid id)
         {
-            throw new NotImplementedException();
+            var genre =    _genreRepository.Get(id);
+
+            return _genreRepository.Delete(_mapper.Map<Domain.Entities.Genre>(genre.Result));
         }
 
-        public async Task<List<GenreDto>> Get(Expression<Func<GenreDto, bool>> filter)
+        public async Task<GenreDto> Get(Guid id)
         {
-            var dtoFilter = _mapper.Map<Expression<Func<Domain.Entities.Genre, bool>>>(filter);
-            var result = await _genreRepository.Get(dtoFilter);
-            return _mapper.Map<List<GenreDto>>(result);
-            //return await Task.FromResult(_mapper.Map<List<DirectorDto>>(result));
+            
+            var result = await _genreRepository.Get(id);
+
+            return _mapper.Map<GenreDto>(result);
         }
 
         public async Task<List<GenreDto>> GetAll()
@@ -47,7 +49,7 @@ namespace MovieDbInf.Application.Services
             return _mapper.Map<List<GenreDto>>(result);
         }
 
-        public Task Update(int id, UpdateGenreDto genre)
+        public Task Update(Guid id, UpdateGenreDto genre)
         {
             throw new NotImplementedException();
         }
